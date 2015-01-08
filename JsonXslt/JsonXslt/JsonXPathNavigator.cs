@@ -319,7 +319,14 @@ namespace JsonXslt
 					return ((JArray)currentObject)[CurrentIdx()].ToString();
 				}
 
-				return currentObject.ToString();
+				if (currentObject is JProperty)
+				{
+					return ((JProperty)currentObject).Value.ToString();
+				}
+				else
+				{
+					return currentObject.ToString();
+				}
 			}
 		}
 	}
