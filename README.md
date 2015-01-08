@@ -1,5 +1,5 @@
 # JsonXslt
-Provides ability to convert Json &lt;-> Xml and the ability to transform via Xslt via Newtonsoft's Json.Net.
+Provides ability to convert Json &lt;-> Xml and the ability to transform via Xslt via Newtonsoft's Json.Net. This allows you to do Json <-> Json (in a different format) Json -> HTML, Json -> XML, XML -> Json (when certain rules are met).
 
 # Examples
 
@@ -8,18 +8,18 @@ Json Representation:
 {
   "member1": "True",
   "member2": {
-    "child1": "1.245"
+    "child1": 1.245
   },
   "member3": [
     "One",
     "Two",
     {
-      "child2": "2.4596"
+      "child2": 2.4596
     },
     {
       "child3": {
-        "subchild1": "2.4596",
-        "subchild2": "2.4596"
+        "subchild1": 2.4596,
+        "subchild2": 2.4596
       }
     }
   ]
